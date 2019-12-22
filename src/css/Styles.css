@@ -1,0 +1,7 @@
+#btn {
+    -fx-background-color: antiquewhite;
+}
+
+#btn:hover {
+    -fx-background-color: darkgoldenrod;
+}
