@@ -3,17 +3,13 @@
 <?import java.net.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 <?scenebuilder-stylesheet /css/styles.css?>
 
-<VBox alignment="center" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.Controller">
+<VBox alignment="center" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <stylesheets><URL value="@/css/Styles.css" /></stylesheets>
     <TextArea fx:id="textArea" editable="false" VBox.vgrow="ALWAYS" />
-    <HBox>
-        <TextField fx:id="textField" onAction="#sendMsg" promptText="Введите сообщение..." HBox.hgrow="ALWAYS">
-         <font>
-            <Font name="Bell MT" size="12.0" />
-         </font></TextField>
-        <Button fx:id="btn" onAction="#sendMsg" text="SEND" />
+    <HBox id="hbox" alignment="CENTER" prefHeight="39.0" prefWidth="478.0">
+        <TextField fx:id="textField" onAction="#sendMsg" promptText="Напишите сообщение..." />
+        <Button fx:id="btn" onAction="#sendMsg" text="Отправить" />
     </HBox>
 </VBox>
